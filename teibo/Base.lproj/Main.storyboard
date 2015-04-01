@@ -4,11 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--View Controller-->
         <scene sceneID="XZe-fm-gXy">
             <objects>
-                <tableViewController id="9Ld-mr-gsK" sceneMemberID="viewController">
-                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="80" sectionHeaderHeight="10" sectionFooterHeight="10" id="lip-u7-I0F">
+                <tableViewController id="9Ld-mr-gsK" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="lip-u7-I0F">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -54,7 +54,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LwD-kS-iN4" id="F41-2Q-3G6">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="テーブルマウンテンは地盤のやわらかい部分が風雨で削り取られ、固い地盤だけが台形状に残った山。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PcM-Gb-rJu">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="テーブルマウンテン" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PcM-Gb-rJu">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -74,6 +74,10 @@
                             <outlet property="delegate" destination="9Ld-mr-gsK" id="27E-Ac-HFb"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="tableCell" destination="CUN-3G-aki" id="qR1-zT-Uy6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YtD-c1-bIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,8 +85,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.png" width="500" height="500"/>
-        <image name="2.png" width="500" height="500"/>
-        <image name="3.png" width="500" height="500"/>
+        <image name="1.png" width="44" height="44"/>
+        <image name="2.png" width="44" height="44"/>
+        <image name="3.png" width="44" height="44"/>
     </resources>
 </document>
